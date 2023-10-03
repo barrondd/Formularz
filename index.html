@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <div class="container">
+            <label class="l" for="ele">
+                Nazwa elementu: <select name="element" id="element" name="ele">
+                    <option value="p">p</option>
+                    </select>
+                </label>  
+                <label class="l" for="name">Tekst w elemencie: <input type="text" id="name" name="name"  value="jakis tekst"></label>
+                <label class="l" for="data">Data w elemencie: <input type="date" name="data" id="data" ><label>
+                    <label class="l" for="padding">Padding w elemencie(rem): <input type="range" max="10" min="1" name="padding" id="padding" value="6"> </label>
+                    <label class="l" for="margin">Margines w elemencie(rem): <input type="range" max="10" min="1" name="margin" id="margin" value="6"> </label>
+                    <label class="l" for="Range">Odległość między literami(rem): <input type="number" name="Range" id="range" value="0"> </label>
+                    <label class="l"for="FC">Kolor czcionki: <input type="color" name="FC" id="FC" value="#00000"></label>
+                    <label class="l" for="BC">Kolor czcionki: <input type="color" name="BC" id="BC" value="#C4FFFF"></label>
+                </div>
+                    <fieldset>
+                        <legend>wyrównanie tekstu</legend>
+                        <label for="text">lewa: <input type="radio" name="text" id="l"></label>
+                 <label for="text">środek: <input type="radio" name="text" id="s" checked></label>
+                 <label for="text">prawa<input type="radio" name="text" id="p"></label>
+        </fieldset>
+        <fieldset>
+            <legend>deokracja tekstu
+            </legend>
+            <label for="pod">podkreślenie: <input type="checkbox" name="pod" id="p"></label>
+            <label for="prz">przekreślenie: <input type="checkbox" name="prz" id="prz" checked></label>
+            <label for="nad">nadkreślenie: <input type="checkbox" name="nad" id="nad"></label>
+        </fieldset>
+        <label for="button"><input type="button" value="Utwórz" name="button" id="but"></label>
+    </form>
+</body>
+</html>
